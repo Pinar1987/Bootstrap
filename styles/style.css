@@ -1,0 +1,193 @@
+:root{
+    --primary-color:#bc6c25;
+    --secondary-color:#4d3822;
+    --hover-color:#e76f51;
+    --section-color:#B78752;
+}
+
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+/*! NAVBAR */
+
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar .container{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+ .nav-link{
+    color:  white !important;
+}
+ .nav-link:hover{
+    color: var(--primary-color) !important;
+}
+
+/*! HOME */
+
+.home-item{
+    /* border: 5px solid red; */
+    /* height: calc(100vh - 135px); */
+    height: 100vh;
+}
+
+.home-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.home-caption{
+    bottom: 30%;
+    right:15%;
+    left:15%; 
+}
+
+.btn-container .btn{
+    background-color: #bc6c25;
+    border:none;
+    width: 10rem;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+
+}
+
+.hero{
+    position: relative;
+    z-index: 3;
+}
+
+.black{
+    width: 450px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.809);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+    z-index: 2;
+    
+}
+
+/*! ABOUT */
+section#about{
+    
+    background-color: var(--primary-color);
+}
+
+.image-container{
+    /* border: 2px solid red; */
+    position: relative;
+
+}
+.image-container img{
+    width: 100%;
+
+}
+
+
+.about-image-info{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.509),
+        rgba(188, 108, 37, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#about button{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+
+/*! Menu */
+
+section#menu{
+    background-color: var(--secondary-color) !important;
+}
+section#menu button{
+    background-color: var(--secondary-color) !important;
+    margin-right: 1rem;
+}
+section#menu .container{
+    background-color: var(--primary-color) !important;
+}
+
+section#menu .menu-header{
+    color: var(--primary-color);
+}
+
+/*! Contact */
+
+section#contact{
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.509),
+        rgba(188, 108, 37, 1)
+    ), url(../img/slider2.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#contact input, section#contact textarea{
+    background-color: inherit;
+}
+section#contact input:focus, section#contact textarea:focus{
+    background-color: var(--primary-color);
+}
+
+label{
+    color: white;
+    font-style: italic;
+}
+
+textarea{
+    resize: none;
+    height: 100px !important;
+}
+
+input::placeholder{
+    color: white !important;
+}
+
+.google-map{
+    filter: grayscale(100);
+    border-radius: 20px;
+}
+
+/*! Footer */
+
+footer{
+    background-color: var(--primary-color);
+}
+
+
+
+
+.accordion-item{
+    background-color : red !important;
+}
